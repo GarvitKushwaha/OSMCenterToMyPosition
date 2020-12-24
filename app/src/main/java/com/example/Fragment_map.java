@@ -90,7 +90,7 @@ public class Fragment_welcome extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.i(Constants.APP_TAG, "centerMap clicked ");
-                GeoPoint myPosition = new GeoPoint(currentLocaion.getLatitude(), currentLocation.getLongitude());
+                GeoPoint myPosition = new GeoPoint(mLocationOverlay.getMyLocation.getLatitude(), mLocationOverlay.getMyLocation.getLongitude());
                 mMapView.getController().animateTo(myPosition);
             }
         });
